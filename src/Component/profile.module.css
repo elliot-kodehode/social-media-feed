@@ -1,0 +1,48 @@
+
+
+.profilePic {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(-35deg, darkturquoise, white);
+    padding: 2 6px;
+    border-radius: 40px;
+}
+
+.profileContainer {
+    width: 40vw;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 2px 5px black;
+}
+
+.profile {
+    display: flex;
+    gap: 6px;
+}
+
+.userName {
+    color: #e8e8e8;
+    font-weight: 400;
+}
+
+.fullName {
+    color: white;
+}
+
+.likesContainer {
+    display: flex;
+    width: fit-content;
+    align-items: center;
+    gap: 6px;
+}
+
+.likesIcon {
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+}
+
+.likesIcon:hover {
+    transform: scale(1.1)
+}
