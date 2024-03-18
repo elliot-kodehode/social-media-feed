@@ -1,9 +1,11 @@
 import { useState } from 'react'
 import './App.css'
-import Feed from "./Component/Feed.jsx";
+import Page from "./Component/Page.jsx";
 function App() {
+  console.log()
   return (
-      <Feed/>
+      <Page/>
+
   )
 }
 

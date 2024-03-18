@@ -1,346 +1,283 @@
 const posts = [
     {
-        username: "adventureseeker",
-        fullName: "John Smith",
-        content: "Hiking through the mountains this weekend was incredible! ⛰️🌲 #adventure #nature",
-        likes: 111,
-        timestamp: "2024-03-07T16:25:00"
-    },
-    {
-        username: "petlover123",
-        fullName: "Emma Johnson",
-        content: "Spent the day at the animal shelter volunteering. 🐶🐱 It's always so rewarding. #animallover #volunteering",
-        likes: 222,
-        timestamp: "2024-03-06T11:10:00"
-    },
-    {
-        username: "cookingenthusiast",
-        fullName: "Liam Brown",
-        content: "Tried out a new recipe for dinner tonight. 🍲 It turned out delicious! #cooking #food",
-        likes: 333,
-        timestamp: "2024-03-05T19:55:00"
-    },
-    {
-        username: "gardeninglover",
-        fullName: "Olivia Smith",
-        content: "Spent the day in my garden planting flowers. 🌸🌼 #gardening #nature",
-        likes: 444,
-        timestamp: "2024-03-04T13:40:00"
-    },
-    {
-        username: "filmfanatic",
-        fullName: "Noah Johnson",
-        content: "Watched a classic movie marathon last night. 🎬 So many great films! #movies #cinema",
-        likes: 555,
-        timestamp: "2024-03-03T20:20:00"
-    },
-    {
-        username: "photographylover",
-        fullName: "Sophia Wilson",
-        content: "Took some amazing shots during sunset today. 📸🌅 #photography #sunset",
-        likes: 666,
-        timestamp: "2024-03-02T17:30:00"
-    },
-    {
-        username: "yogapractitioner",
-        fullName: "Liam Johnson",
-        content: "Morning yoga session to start the day right. 🧘‍♀️ Feeling refreshed and energized. #yoga #wellness",
-        likes: 777,
-        timestamp: "2024-03-01T08:45:00"
+        username: "fashionista",
+        fullName: "Ava Garcia",
+        content: "In love with my new outfit! 👗",
+        likes: 999,
+        timestamp: "Posted 1 hour ago"
     },
     {
         username: "codingenthusiast",
-        fullName: "Emma Davis",
-        content: "Worked on a new coding project all night. 💻 Excited to see it come together. #coding #programming",
+        fullName: "Daniel Johnson",
+        content: "Worked on a new coding project all night. 💻 Excited to see it come together.",
         likes: 888,
-        timestamp: "2024-02-29T23:55:00"
+        timestamp: "Posted 2 hours ago"
     },
     {
-        username: "fashionista",
-        fullName: "Noah Wilson",
-        content: "In love with my new outfit! 👗💁‍♀️ #fashion #style",
-        likes: 999,
-        timestamp: "2024-02-28T14:15:00"
-    },
-    {
-        username: "coffeeaddict",
+        username: "yogapractitioner",
         fullName: "Sophia Martinez",
-        content: "Nothing like a strong cup of coffee to kickstart the day. ☕️ #coffee #morning",
-        likes: 101,
-        timestamp: "2024-02-27T09:30:00"
+        content: "Morning yoga session to start the day right. 🧘‍♀️ Feeling refreshed and energized.",
+        likes: 777,
+        timestamp: "Posted 3 hours ago"
     },
     {
-        username: "fitnessjunkie",
-        fullName: "Liam Brown",
-        content: "Just finished a killer workout! 💪 Feeling the burn. #fitness #exercise",
-        likes: 202,
-        timestamp: "2024-02-26T18:20:00"
+        username: "photographylover",
+        fullName: "James Wilson",
+        content: "Took some amazing shots during sunset today. 📸🌅",
+        likes: 666,
+        timestamp: "Posted 4 hours ago"
     },
     {
-        username: "bookworm88",
-        fullName: "Emma Wilson",
-        content: "Started reading a new book today. 📚 Can't put it down! #reading #booklover",
-        likes: 303,
-        timestamp: "2024-02-25T11:50:00"
+        username: "filmfanatic",
+        fullName: "Olivia Davis",
+        content: "Watched a classic movie marathon last night. 🎬 So many great films!",
+        likes: 555,
+        timestamp: "Posted 5 hours ago"
     },
     {
-        username: "musiclover456",
-        fullName: "Noah Johnson",
-        content: "Attended an incredible concert last night! 🎶🤘 #livemusic #goodvibes",
-        likes: 404,
-        timestamp: "2024-02-24T22:45:00"
+        username: "gardeninglover",
+        fullName: "Michael Brown",
+        content: "Spent the day in my garden planting flowers. 🌸🌼",
+        likes: 444,
+        timestamp: "Posted 6 hours ago"
     },
     {
-        username: "beachbum22",
-        fullName: "Olivia Martinez",
-        content: "Spent the day soaking up the sun at the beach. 🏖️☀️ #beachday #relaxation",
-        likes: 505,
-        timestamp: "2024-02-23T13:35:00"
+        username: "cookingenthusiast",
+        fullName: "Emily Johnson",
+        content: "Tried out a new recipe for dinner tonight. 🍲 It turned out delicious!",
+        likes: 333,
+        timestamp: "Posted 7 hours ago"
     },
     {
-        username: "artistic_soul",
-        fullName: "Noah Wilson",
-        content: "Finished my latest painting! 🎨 Can't wait to share it with everyone. #art #creativity",
-        likes: 606,
-        timestamp: "2024-02-22T16:40:00"
+        username: "petlover123",
+        fullName: "John Doe",
+        content: "Spent the day at the animal shelter volunteering. 🐶🐱 It's always so rewarding.",
+        likes: 222,
+        timestamp: "Posted 8 hours ago"
     },
     {
-        username: "techgeek789",
-        fullName: "Liam Garcia",
-        content: "Just launched my new app! 📱Excited to see how it performs. #tech #innovation",
-        likes: 707,
-        timestamp: "2024-02-21T09:20:00"
+        username: "adventureseeker",
+        fullName: "Jane Smith",
+        content: "Hiking through the mountains this weekend was incredible! ⛰️🌲",
+        likes: 111,
+        timestamp: "Posted 9 hours ago"
     },
     {
         username: "traveler22",
-        fullName: "Emma Clark",
-        content: "Exploring the beautiful beaches of Bali! 🏖️☀️ #wanderlust #travelgram",
+        fullName: "Samantha White",
+        content: "Exploring the beautiful beaches of Bali! 🏖️☀️",
         likes: 808,
-        timestamp: "2024-02-20T14:10:00"
+        timestamp: "Posted 10 hours ago"
     },
     {
         username: "foodiegal",
-        fullName: "Noah Davis",
-        content: "Indulged in some delicious street food today. 🌮🍜 #foodie #streetfood",
+        fullName: "Matthew Johnson",
+        content: "Indulged in some delicious street food today. 🌮🍜",
         likes: 909,
-        timestamp: "2024-02-19T20:00:00"
+        timestamp: "Posted 11 hours ago"
     },
     {
         username: "meditationlover",
-        fullName: "Sophia Martinez",
-        content: "Took some time for meditation and self-reflection today. 🧘‍♂️✨ #meditation #mindfulness",
+        fullName: "Sophie Brown",
+        content: "Took some time for meditation and self-reflection today. 🧘‍♂️✨",
         likes: 210,
-        timestamp: "2024-02-18T17:45:00"
+        timestamp: "Posted 12 hours ago"
     },
     {
         username: "workhardplayhard",
-        fullName: "Liam Davis",
-        content: "Worked hard all week, now it's time to unwind! 🎉 #weekendvibes #relaxation",
+        fullName: "David Lee",
+        content: "Worked hard all week, now it's time to unwind! 🎉",
         likes: 321,
-        timestamp: "2024-02-17T12:30:00"
+        timestamp: "Posted 13 hours ago"
     },
     {
         username: "naturelover",
-        fullName: "Emma Wilson",
-        content: "Spent the day hiking in the forest. 🌲🍃 Such a peaceful escape. #nature #hiking",
+        fullName: "Lily Martinez",
+        content: "Spent the day hiking in the forest. 🌲🍃",
         likes: 432,
-        timestamp: "2024-02-16T09:15:00"
+        timestamp: "Posted 14 hours ago"
     },
     {
         username: "earlybird",
-        fullName: "Noah Smith",
-        content: "Early morning run to start the day on the right foot. 🏃‍♂️☀️ #running #exercise",
+        fullName: "Ethan Taylor",
+        content: "Early morning run to start the day on the right foot. 🏃‍♂️☀️",
         likes: 543,
-        timestamp: "2024-02-15T07:00:00"
+        timestamp: "Posted 15 hours ago"
     },
     {
         username: "musiclover123",
-        fullName: "Sophia Martinez",
-        content: "Discovering new music is my favorite pastime. 🎵🎧 #music #discover",
+        fullName: "Sophia Garcia",
+        content: "Discovering new music is my favorite pastime. 🎵🎧",
         likes: 654,
-        timestamp: "2024-02-14T18:50:00"
+        timestamp: "Posted 16 hours ago"
     },
     {
         username: "gamerpro",
-        fullName: "Liam Johnson",
-        content: "Spent the whole day gaming. 🎮 Leveling up! #gaming #gamers",
+        fullName: "Noah Martinez",
+        content: "Spent the whole day gaming. 🎮 Leveling up!",
         likes: 765,
-        timestamp: "2024-02-13T15:40:00"
+        timestamp: "Posted 17 hours ago"
     },
     {
         username: "travelbug",
-        fullName: "Emma Brown",
-        content: "Wanderlust kicking in again. ✈️ Planning the next adventure! #travel #adventure",
+        fullName: "Emma Johnson",
+        content: "Wanderlust kicking in again. ✈️ Planning the next adventure!",
         likes: 876,
-        timestamp: "2024-02-12T10:35:00"
+        timestamp: "Posted 18 hours ago"
     },
     {
         username: "healthyliving",
-        fullName: "Noah Garcia",
-        content: "Cooked a nutritious meal for dinner tonight. 🥗🍽️ Eating clean feels great! #healthyeating #nutrition",
+        fullName: "William Brown",
+        content: "Cooked a nutritious meal for dinner tonight. 🥗🍽️",
         likes: 987,
-        timestamp: "2024-02-11T19:20:00"
+        timestamp: "Posted 19 hours ago"
     },
     {
         username: "artlover",
-        fullName: "Sophia Davis",
-        content: "Visited an art gallery today. 🖼️ So much talent on display! #art #inspiration",
+        fullName: "Oliver Smith",
+        content: "Visited an art gallery today. 🖼️ So much talent on display!",
         likes: 321,
-        timestamp: "2024-02-10T14:15:00"
+        timestamp: "Posted 20 hours ago"
     },
     {
         username: "motivationnation",
-        fullName: "Liam Wilson",
-        content: "Every day is a new opportunity to chase your dreams. 💫 #motivation #dreambig",
+        fullName: "Emily Taylor",
+        content: "Every day is a new opportunity to chase your dreams. 💫",
         likes: 432,
-        timestamp: "2024-02-09T09:10:00"
+        timestamp: "Posted 21 hours ago"
     },
     {
         username: "doglover",
-        fullName: "Emma Johnson",
-        content: "Took my furry friend for a long walk today. 🐕🚶‍♂️ #doglover #mansbestfriend",
+        fullName: "Lucas Johnson",
+        content: "Took my furry friend for a long walk today. 🐕🚶‍♂️",
         likes: 543,
-        timestamp: "2024-02-08T16:05:00"
+        timestamp: "Posted 22 hours ago"
     },
     {
         username: "fashionforward",
-        fullName: "Noah Martinez",
-        content: "Experimenting with different fashion styles today. 👠👗 #fashion #experiment",
+        fullName: "Ella Garcia",
+        content: "Experimenting with different fashion styles today. 👠👗",
         likes: 654,
-        timestamp: "2024-02-07T11:00:00"
+        timestamp: "Posted 23 hours ago"
     },
     {
         username: "coffeetime",
-        fullName: "Sophia Brown",
-        content: "Midday coffee break to recharge. ☕️ #coffee #breaktime",
+        fullName: "Daniel Brown",
+        content: "Midday coffee break to recharge. ☕️",
         likes: 765,
-        timestamp: "2024-02-06T18:55:00"
+        timestamp: "Posted 1 day ago"
     },
     {
         username: "productive",
-        fullName: "Liam Garcia",
-        content: "Managed to check off everything on my to-do list today. ✔️ #productivity #goals",
+        fullName: "Sophie Martinez",
+        content: "Managed to check off everything on my to-do list today. ✔️",
         likes: 876,
-        timestamp: "2024-02-05T13:50:00"
+        timestamp: "Posted 2 days ago"
     },
     {
         username: "staypositive",
-        fullName: "Emma Wilson",
-        content: "Choosing to see the good in every situation. 🌟 #positivity #optimism",
+        fullName: "Noah Garcia",
+        content: "Choosing to see the good in every situation. 🌟",
         likes: 987,
-        timestamp: "2024-02-04T08:45:00"
+        timestamp: "Posted 3 days ago"
     },
     {
         username: "foodiegirl",
-        fullName: "Noah Davis",
-        content: "Tried a new restaurant for lunch today. 🍽️ The food was amazing! #foodie #yum",
+        fullName: "Isabella Johnson",
+        content: "Tried a new restaurant for lunch today. 🍽️ The food was amazing!",
         likes: 210,
-        timestamp: "2024-02-03T17:40:00"
+        timestamp: "Posted 4 days ago"
     },
     {
         username: "medstudent",
-        fullName: "Sophia Martinez",
-        content: "Late-night study session at the library. 📚💉 #medschool #studying",
+        fullName: "Sophia Taylor",
+        content: "Late-night study session at the library. 📚💉",
         likes: 321,
-        timestamp: "2024-02-02T12:35:00"
+        timestamp: "Posted 5 days ago"
     },
     {
         username: "fitnessenthusiast",
-        fullName: "Liam Wilson",
-        content: "Completed a challenging workout today. 💪 Feeling stronger than ever! #fitness #strength",
+        fullName: "Oliver Brown",
+        content: "Completed a challenging workout today. 💪 Feeling stronger than ever!",
         likes: 432,
-        timestamp: "2024-02-01T07:30:00"
+        timestamp: "Posted 6 days ago"
     },
     {
         username: "traveladventures",
-        fullName: "Emma Brown",
-        content: "Wandering through the streets of Rome. 🇮🇹 So much history and beauty! #travel #explore",
+        fullName: "William Martinez",
+        content: "Wandering through the streets of Rome. 🇮🇹 So much history and beauty!",
         likes: 543,
-        timestamp: "2024-01-31T16:25:00"
+        timestamp: "Posted 1 week ago"
     },
     {
         username: "selfcare",
-        fullName: "Noah Garcia",
-        content: "Taking a break to focus on self-care today. 🛁💆‍♂️ #selfcare #relaxation",
+        fullName: "Sophie Johnson",
+        content: "Taking a break to focus on self-care today. 🛁💆‍♂️",
         likes: 654,
-        timestamp: "2024-01-30T11:20:00"
+        timestamp: "Posted 8 days ago"
     },
     {
         username: "booklover",
-        fullName: "Sophia Johnson",
-        content: "Lost in the pages of a good book. 📖 #reading #escape",
+        fullName: "Oliver Taylor",
+        content: "Lost in the pages of a good book. 📖",
         likes: 765,
-        timestamp: "2024-01-29T18:15:00"
+        timestamp: "Posted 9 days ago"
     },
     {
         username: "sunnydays",
-        fullName: "Liam Wilson",
-        content: "Enjoying the sunshine and warm weather. ☀️ #sunshine #happiness",
+        fullName: "Emma Garcia",
+        content: "Enjoying the sunshine and warm weather. ☀️",
         likes: 876,
-        timestamp: "2024-01-28T13:10:00"
+        timestamp: "Posted 10 days ago"
     },
     {
         username: "nightowl",
-        fullName: "Emma Davis",
-        content: "Late-night thoughts and reflections. 🌙 #latenight #introspection",
+        fullName: "Lucas Smith",
+        content: "Late-night thoughts and reflections. 🌙",
         likes: 987,
-        timestamp: "2024-01-27T08:05:00"
+        timestamp: "Posted 11 days ago"
     },
     {
         username: "musicjunkie",
-        fullName: "Noah Garcia",
-        content: "Attended an epic music festival over the weekend. 🎶🎉 #music #festival",
+        fullName: "Ava Brown",
+        content: "Attended an epic music festival over the weekend. 🎶🎉",
         likes: 210,
-        timestamp: "2024-01-26T17:00:00"
+        timestamp: "Posted 12 days ago"
     },
     {
         username: "travelpics",
-        fullName: "Sophia Johnson",
-        content: "Capturing memories from my latest adventure. 📷✈️ #travel #memories",
+        fullName: "Jackson Garcia",
+        content: "Capturing memories from my latest adventure. 📷✈️",
         likes: 321,
-        timestamp: "2024-01-25T11:55:00"
+        timestamp: "Posted 13 days ago"
     },
     {
         username: "motivationalcoach",
-        fullName: "Liam Martinez",
-        content: "Believe in yourself and anything is possible. 💪🌟 #motivation #believe",
+        fullName: "Emma Smith",
+        content: "Believe in yourself and anything is possible. 💪🌟",
         likes: 432,
-        timestamp: "2024-01-24T06:50:00"
+        timestamp: "Posted 2 weeks ago"
     },
     {
         username: "dogmom",
-        fullName: "Emma Wilson",
-        content: "Spoiling my fur baby with treats today. 🐾🐶 #dogmom #puppylove",
+        fullName: "Lucas Johnson",
+        content: "Spoiling my fur baby with treats today. 🐾🐶",
         likes: 543,
-        timestamp: "2024-01-23T15:45:00"
+        timestamp: "Posted 2 weeks ago"
     },
     {
         username: "artisticmind",
-        fullName: "Noah Johnson",
-        content: "Finding inspiration in the world around me. 🎨✨ #art #inspiration",
+        fullName: "Sophie Taylor",
+        content: "Finding inspiration in the world around me. 🎨✨",
         likes: 654,
-        timestamp: "2024-01-22T10:40:00"
+        timestamp: "Posted 2 weeks ago"
     },
     {
         username: "technerd",
-        fullName: "Sophia Brown",
-        content: "Geeking out over the latest tech gadgets. 🤓📱 #tech #gadgets",
+        fullName: "Oliver Garcia",
+        content: "Geeking out over the latest tech gadgets. 🤓📱",
         likes: 765,
-        timestamp: "2024-01-21T17:35:00"
-    },
-    {
-        username: "fitnessfreak",
-        fullName: "Liam Davis",
-        content: "Never skip a Monday workout! 💪 #fitness #mondaymotivation",
-        likes: 876,
-        timestamp: "2024-01-20T12:30:00"
-    },
-    {
-        username: "wanderlust",
-        fullName: "Emma Martinez",
-        content: "Dreaming of my next travel destination. 🌍✈️ #wanderlust #travel",
-        likes: 987,
-        timestamp: "2024-01-19T07:25:00"
+        timestamp: "Posted 2 weeks ago"
     }
 ];
 

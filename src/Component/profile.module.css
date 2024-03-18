@@ -1,23 +1,30 @@
 
-
+.pointer {
+    cursor: pointer;
+}
 .profilePic {
     width: 60px;
     height: 60px;
     background: linear-gradient(-35deg, darkturquoise, white);
     padding: 2 6px;
+    margin-right: 10px;
     border-radius: 40px;
 }
 
 .profileContainer {
     width: 40vw;
     padding: 12px;
+    gap: 22px;
     display: flex;
     flex-direction: column;
-    box-shadow: 2px 2px 5px black;
+    box-shadow: 2px 2px 5px #1a1a1a;
+    border-radius: 12px;
+    background-color: #272727;
 }
 
 .profile {
     display: flex;
+    align-items: center;
     gap: 6px;
 }
 
@@ -38,11 +45,14 @@
 }
 
 .likesIcon {
-    cursor: pointer;
     width: 25px;
     height: 25px;
 }
 
 .likesIcon:hover {
     transform: scale(1.1)
+}
+
+.timestamp, .userName {
+   font-style: italic;
 }

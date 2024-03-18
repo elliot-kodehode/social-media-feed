@@ -1,0 +1,32 @@
+.currentUser {
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    align-items: center;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 400px;
+    border: 1px solid #959595;
+}
+
+.profilePic {
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(-35deg, darkturquoise, white);
+    border-radius: 120px;
+}
+
+.followers {
+    display: flex;
+    gap: 22px;
+}
+
+.profileName {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.profileName h2 {
+    margin: 0;
+}
