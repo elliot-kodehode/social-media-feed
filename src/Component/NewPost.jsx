@@ -1,8 +1,5 @@
 import styles from "./feed.module.css";
-import {useEffect, useState} from "react";
-import posts from "../assets/posts.js";
-import User from "./User.jsx";
-import Feed from "./Feed.jsx";
+import {useState} from "react";
 
 export default function NewPost({addNewPost, randomPost}) {
 
@@ -25,7 +22,7 @@ export default function NewPost({addNewPost, randomPost}) {
 
         }
         addNewPost(newPost);
-        setFormData((prevState) => ({...prevState, [name]: ""}))
+        setFormData({ ...formData, postContent: '' });
     }
 
 

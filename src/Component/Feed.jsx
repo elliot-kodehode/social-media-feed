@@ -3,7 +3,6 @@ import Profile from "./Profile.jsx";
 import posts from "../assets/posts.js";
 import styles from "./feed.module.css";
 import NewPost from "./NewPost.jsx";
-import User from "./User.jsx"
 
 
 export default function Feed( {randomPost}) {
