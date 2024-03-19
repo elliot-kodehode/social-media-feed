@@ -23,3 +23,31 @@
     cursor: default;
     width: fit-content;
 }
+
+.newPost {
+    width: 100%;
+    resize: none;
+    padding: 6px;
+}
+
+.postWrapper {
+    background-color: #272727;
+    padding: 22px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.postBtn {
+    padding: 2px 12px;
+}
+
+.formField {
+    display: flex;
+    flex-direction: column;
+}
+
+.formLabel {
+    width: 100%;
+}

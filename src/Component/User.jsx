@@ -1,8 +1,8 @@
 import posts from "../assets/posts.js";
 import styles from "./user.module.css";
+import Page from "./Page.jsx";
 
-export default function User() {
-    const randomPost = posts[Math.floor(Math.random() * posts.length)]
+export default function User( {randomPost} ) {
 
     return (
         <div className={styles.currentUser}>
