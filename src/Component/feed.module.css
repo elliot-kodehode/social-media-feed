@@ -5,6 +5,7 @@
     min-height: 100vh;
     gap: 32px;
     padding: 44px 62px;
+    margin-left: 400px;
     /*background-color: #1a1a1a;*/
 }
 
@@ -32,11 +33,15 @@
 
 .postWrapper {
     background-color: #272727;
-    padding: 22px;
-    display: flex;
-    flex-direction: column;
     align-items: center;
     width: 100%;
+    padding: 12px;
+    gap: 22px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 2px 5px #1a1a1a;
+    border-radius: 12px;
+
 }
 
 .postBtn {
@@ -50,4 +55,10 @@
 
 .formLabel {
     width: 100%;
+    text-align: center;
+    }
+
+.errorMessage {
+    padding-top: 2px;
+    color: #ff3434;
 }

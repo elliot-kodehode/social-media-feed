@@ -4,35 +4,40 @@ import posts from "../assets/posts.js";
 import styles from "./feed.module.css";
 import NewPost from "./NewPost.jsx";
 
-
 export default function Feed( {randomPost}) {
+
     const [currentIndex, setIndex] = useState(10)
     const [loadBtn, setLoadBtn] = useState("Load More")
     const [buttonClass, setClass] = useState(styles.button)
-    const [loadedPosts, setLoadedPosts] = useState(posts.slice(0, currentIndex));
+    const storedPosts = JSON.parse(localStorage.getItem("allPosts"));
+    const [allPosts, setPosts] = useState(storedPosts || posts);
+    const loadedPosts = allPosts.slice(0, currentIndex);
 
     // Loads more posts on button click
     function handleClick() {
-
         setIndex((prevNum)=> (prevNum + 10 ))
-
-
-        console.log(currentIndex + 10) // + 10 cuz async and the other ways to do it were way too long
     }
 
-
     // Updates button when index reaches end of array
-
     useEffect(() => {
-            if (currentIndex >= posts.length) {
+            if (currentIndex >= allPosts.length) {
                 setLoadBtn("End of feed")
                 setClass(styles.buttonHidden)
             }
         }, [currentIndex]);
 
+    // Updates post list with the new post
     function addNewPost(newPost) {
-        setLoadedPosts((prevPosts) => [newPost, ...prevPosts]);
+        setPosts((prevPosts) => [newPost, ...prevPosts])
+        setIndex((prevNum) => (prevNum + 1))
     }
+
+    // Stores the new post list
+    useEffect(() => {
+        localStorage.setItem("allPosts", JSON.stringify(allPosts));
+
+    }, [allPosts]);
+
 
     return (
         <>
@@ -47,10 +52,3 @@ export default function Feed( {randomPost}) {
         </>
     )
 }
-
-console.log(`
-^..^      /
-/_/\\_____/
-   /\\   /\\
-  /  \\ /  \\
-`)

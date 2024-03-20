@@ -1,6 +1,7 @@
 import posts from "../assets/posts.js";
 import styles from "./user.module.css";
 import Page from "./Page.jsx";
+import NewPost from "./NewPost.jsx";
 
 export default function User( {randomPost} ) {
 
