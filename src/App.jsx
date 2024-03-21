@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import './App.css'
 import Page from "./Component/Page.jsx";
 function App() {
