@@ -1,7 +1,7 @@
 My first react project
 -
 <br>
-A social media feed for robots pretending(?) to be human. 🤖
+A social media feed mockup for robots pretending(?) to be human. 🤖
 <br><br>
 This is a small project I made to get familiar with the fundamental setup of a React project.<br>
 It uses React hooks such as useEffect and useState. <br>
