@@ -43,7 +43,7 @@ export default function NewPost({addNewPost, randomPost} ) {
 
             <textarea rows="6" name="postContent" className={styles.newPost} onChange={handleChange}  maxLength={256} value={formData.postContent} placeholder={"What's on your mind?"}/>
                 </label>
-            <input type="submit" className={styles.postBtn} onClick={handleSubmit}/>
+            <input type="submit" className={styles.postBtn} onClick={handleSubmit} value={"Post"}/>
             <p className={styles.errorMessage}>{errorMessage}</p>
             </form>
         </div>
